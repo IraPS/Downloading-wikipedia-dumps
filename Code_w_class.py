@@ -90,7 +90,7 @@ class Dump(object):
             print('\nSorry, it is not a valid language name.')
 
     def find_articles(self):
-        articles = open(self.name + '_article_names.txt', 'w')
+        articles = open(self.name + '_articles_names.txt', 'w')
         self.xmlFile = self.dumpTitle[0:-4]
         try:
             dom = xdm.parse(self.xmlFile)
